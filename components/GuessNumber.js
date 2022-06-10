@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {StyleSheet, View, Button, TextInpunt} from 'react-native';
+import {StyleSheet, View, Button, TextInput} from 'react-native';
 
 function mapItems(items) {
     return items.map((value, i) => ({key:i.toString(), value}))
@@ -62,7 +62,7 @@ function GuessNumber(props) {
 
     return (
         <View style = {styles.game}>
-            <TextInpunt
+            <TextInput
                 style={styles.input}
                 autoFocus
                 placeholder="Guess My Number"
